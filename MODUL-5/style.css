@@ -1,0 +1,123 @@
+:root {
+    --primary: #3f51b5;
+    --primary-dark: #303f9f;
+    --secondary: #ffc107;
+    --background: #fafafa;
+    --surface: #ffffff;
+    --error: #f44336;
+    --text-primary: #212121;
+    --text-secondary: #757575;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--primary);
+    padding: 0 20px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.card {
+    background: var(--surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    text-align: left;
+    color: var(--text-secondary);
+    font-size: 13px;
+    border-bottom: 2px solid #eee;
+    padding: 15px 10px;
+}
+
+td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+tr:hover { background-color: #f5f5f5; }
+
+/* Form Style */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    color: var(--primary);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Button Style */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary { background-color: var(--primary); color: white; }
+.btn-primary:hover { background-color: var(--primary-dark); }
+
+.btn-danger { background-color: var(--error); color: white; }
+
+.btn-warning { background-color: var(--secondary); color: black; }
